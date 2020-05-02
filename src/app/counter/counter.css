@@ -1,0 +1,9 @@
+.box-shadow {
+  background-image: url('c:\users\vishe\source\repos\webapplication1\webapplication1\clientapp\src\app\images\coronavirus-4914026_1280.jpg');
+  /*background-image: url('c:\users\vishe\source\repos\webapplication1\webapplication1\clientapp\src\app\images\coronavirus-4914026_1920.jpg');*/
+  /*background-image: url('c:\users\vishe\source\repos\webapplication1\webapplication1\clientapp\src\app\images\covid-19-5055890_1920.jpg');*/
+}
+
+p {
+  padding-right: 350px;
+}

@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="column1" style="background-color:cornflowerblue;">
+    <h2 style="text-align:center;font-size:40px">India</h2>
+  </div>
+</div>
+
+<div class="row" *ngFor="let country of IndiaData; let i=index">
+  <div class="column" *ngIf="i==0" style="background-color:cadetblue;">
+    <h2 *ngIf="i==0" style="text-align:center;font-size:40px">Total Cases</h2>
+    <p *ngIf="i==0" style="text-align:center;font-size:25px">{{country.cases}}</p>
+  </div>
+  <div class="column" *ngIf="i==0" style="background-color:red;">
+    <h2 *ngIf="i==0" style="text-align:center;font-size:40px">Deaths</h2>
+    <p *ngIf="i==0" style="text-align:center;font-size:25px">{{country.deaths}}</p>
+  </div>
+  <div class="column" *ngIf="i==0" style="background-color:orange;">
+    <h2 *ngIf="i==0" style="text-align:center;font-size:40px">Active Cases</h2>
+    <p *ngIf="i==0" style="text-align:center;font-size:25px">{{country.active}}</p>
+  </div>
+</div>
+
+
+
+  <div class="table-responsive">
+    <table class="table" style="border-collapse: collapse;
+    width: 100%;
+  " *ngIf="States; else showMsg">
+      <tr style="background-color:rgba(220,230,242,1); font-size:16pt;">
+        <th style="text-align:center; padding: 8px">State</th>
+        <th style="text-align:center;">Total Cases</th>
+        <th style="text-align:center;">Total Deaths</th>
+        <th style="text-align:center;">Active Cases</th>
+        <th style="text-align:center;">Total Recovered</th>
+
+      </tr>
+      <tr *ngFor="let Data of States[0]; let i=index">
+        <td style="text-align:center;font-weight:bold">{{Data.name}}</td>
+        <td style="text-align:center;color:navy">{{Data.total}}</td>
+        <td style="text-align:center;color:red">{{Data.death}}</td>
+        <td style="text-align:center;color:orange">{{Data.confirmed}}</td>
+        <td style="text-align:center;color:green">{{Data.cured}}</td>
+
+
+      </tr>
+
+    </table>
+
+  </div>
+  <ng-template #showMsg>
+    <h4 class="jumbotron" style="text-align: center;font-size: 22pt; background-color: rgba(220,230,242,1);">Loading...</h4>
+  </ng-template>

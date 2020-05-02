@@ -1,0 +1,33 @@
+
+select {
+  outline: 0;
+  background: rgba(220,230,242,1);
+  border: 1px solid black;
+}
+.column {
+  float: left;
+  width: 31.55%;
+  padding: 10px;
+  height: 150px; /* Should be removed. Only for demonstration */
+  margin: 10px;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 50px 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column1 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 70px; /* Should be removed. Only for demonstration */
+  margin: 10px;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 50px 20px;
+}

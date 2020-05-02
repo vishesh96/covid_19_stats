@@ -1,0 +1,37 @@
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+html {
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+.intro-2 {
+  background: url("https://mdbootstrap.com/img/Photos/Others/architecture.jpg")no-repeat center center;
+  background-size: cover;
+}
+.container {
+  
+  
+  /*background-image: url('c:\users\vishe\source\repos\webapplication1\webapplication1\clientapp\src\app\images\eclipse-2666089_640.jpg');*/
+  /*//background-image: url('c:\users\vishe\source\repos\webapplication1\webapplication1\clientapp\src\app\images\covid-19-5055890_1920.jpg');*/
+  height: 130px;
+  background-image: url('c:\users\vishe\source\repos\webapplication1\webapplication1\clientapp\src\app\images\eclipse-2666089_1280.jpg');
+}
+.nav-item{
+    font-size:20px;
+    text-decoration-color:white;
+}
+.navbar-brand{
+    font-size:40px;
+}
